@@ -180,7 +180,7 @@ func PhishURLToRealURL(phishURL string) string {
 //check if the requested URL matches termination URLS patterns and returns verdict
 func CheckTermination(input string) bool {
 
-	input = PhishURLToRealURL(input)
+	//input = PhishURLToRealURL(input)
 
 	if len(TerminateTriggers) > 0 {
 		for _, pattern := range TerminateTriggers {
